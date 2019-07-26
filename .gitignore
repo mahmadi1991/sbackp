@@ -9,9 +9,3 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-composer.lock
-/.idea
-.idea/sewing.iml
-*.xml
-.idea/workspace.xml
-.idea\workspace.xml
