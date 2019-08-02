@@ -24,8 +24,6 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => '1',
             'title'           => 'ابریشم',
             'cost'            => null,
-            'discountPercent' => null,
-            'discountStatus'  => null,
             'stockStatus'     => null,
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -39,8 +37,6 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => '2',
             'title'           => 'مخمل',
             'cost'            => null,
-            'discountPercent' => null,
-            'discountStatus'  => null,
             'stockStatus'     => null,
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -54,8 +50,6 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => '3',
             'title'           => 'چرم',
             'cost'            => null,
-            'discountPercent' => null,
-            'discountStatus'  => null,
             'stockStatus'     => null,
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -69,8 +63,7 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => null,
             'title'           => 'ابریشم آبی وارداتی از چین',
             'cost'            => 99000,
-            'discountPercent' => 10,
-            'discountStatus'  => 'Y',
+            'length'            => 100,
             'stockStatus'     => 'Y',
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -84,8 +77,7 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => null,
             'title'           => 'ابریشم آبی وارداتی از افغانستان',
             'cost'            => 70000,
-            'discountPercent' => 0,
-            'discountStatus'  => 'N',
+            'length'            => 100,
             'stockStatus'     => 'Y',
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -99,8 +91,7 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => null,
             'title'           => 'مخملی آبی',
             'cost'            => 80000,
-            'discountPercent' => 15,
-            'discountStatus'  => 'Y',
+            'length'            => 100,
             'stockStatus'     => 'Y',
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -114,8 +105,7 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => null,
             'title'           => 'مخملی قرمز',
             'cost'            => 100000,
-            'discountPercent' => 0,
-            'discountStatus'  => 'N',
+            'length'            => 100,
             'stockStatus'     => 'Y',
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
@@ -129,8 +119,7 @@ class FabricTableSeeder extends Seeder
             'parentOrder'     => null,
             'title'           => 'مخملی مشکی',
             'cost'            => 100000,
-            'discountPercent' => 0,
-            'discountStatus'  => 'N',
+            'length'            => 100,
             'stockStatus'     => 'N',
             'creatorId'       => $faker->numberBetween(1, 2),
             'created_at'      => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
