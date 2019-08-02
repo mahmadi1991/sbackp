@@ -20,7 +20,7 @@ class Area extends Migration
             $table->unsignedBigInteger('cityId')->nullable();
             $table->string('title', 500)->nullable();
             $table->string('slug', 225)->nullable();
-            $table->string('postmanCost', 20)->nullable();
+            //$table->string('postmanCost', 20)->nullable();
             $table->string('transmissionCost', 20)->nullable();
             $table->enum('status', ['ACTIVE', 'INACTIVE'])->nullable()->default('INACTIVE');
             $table->unsignedBigInteger('creatorId')->nullable();

@@ -18,6 +18,7 @@ class City extends Migration
             $table->bigIncrements('id')->nullable();
             $table->unsignedBigInteger('parentId')->nullable();
             $table->string('name', 50)->nullable();
+            $table->enum('status', ['ACTIVE', 'INACTIVE'])->nullable()->default('INACTIVE');
             $table->unsignedBigInteger('creatorId')->nullable();
             $table->unsignedBigInteger('updaterId')->nullable();
             $table->timestamp('created_at')->nullable();
