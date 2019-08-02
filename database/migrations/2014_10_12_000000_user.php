@@ -24,13 +24,6 @@ class User extends Migration
             $table->string('username', 20)->nullable();
             $table->string('password', 64)->nullable();
             $table->string('mobile', 11)->nullable();
-            $table->string('tellPhone', 20)->nullable();
-            $table->string('nationalCode', 10)->nullable();
-            $table->date('birthDate')->nullable();
-            $table->string('email')->nullable();
-            $table->string('avatar')->nullable();
-            $table->text('description')->nullable();
-            //$table->enum('type', ['ADMIN', 'HOST', 'USER'])->nullable();
             $table->enum('status', ['ACTIVE', 'INACTIVE'])->nullable()->default('INACTIVE');
             $table->string('api_token', 100)->nullable();
             $table->string('remember_token', 100)->nullable();
