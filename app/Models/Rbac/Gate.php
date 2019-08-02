@@ -23,3 +23,4 @@ class Gate extends Model
     }
 
 }
+
