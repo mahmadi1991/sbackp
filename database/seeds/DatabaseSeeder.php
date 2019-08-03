@@ -28,6 +28,8 @@ class DatabaseSeeder extends Seeder
             OrderTableSeeder::class,
             LanguageTableSeeder::class,
             OrderDetailsTableSeeder::class,
+			RoleGateTableSeeder::class,
+			GateTableSeeder::class
         ]);
 
     }
