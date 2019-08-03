@@ -29,10 +29,12 @@ class Order extends Migration
             $table->unsignedBigInteger('tailorId')->nullable();
             $table->unsignedBigInteger('dishdashaModelId')->nullable();
             $table->string('length', 10)->nullable();
+            $table->string('count', 10)->nullable();
+            $table->string('deposit', 10)->nullable();
             $table->string('cost', 10)->nullable();
             $table->string('totalCost', 10)->nullable();
-            $table->string('fabricDiscountAmount', 10)->nullable();
-            $table->string('fabricDiscountReason', 500)->nullable();
+            $table->string('discountAmount', 10)->nullable();
+            $table->string('discountReason', 500)->nullable();
             $table->string('sewingDiscountAmount', 10)->nullable();
             $table->string('sewingDiscountReason', 500)->nullable();
             $table->string('detailsCost', 10)->nullable();

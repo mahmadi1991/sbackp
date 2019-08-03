@@ -18,6 +18,8 @@ class Factor extends Migration
             $table->bigIncrements('id')->nullable();
             $table->string('hash', 10)->unique()->nullable();
             $table->unsignedBigInteger('userId')->nullable();
+            $table->string('no', 10)->nullable();
+            $table->string('totalCost', 10)->nullable();
             $table->enum('kind', ['FABRIC', 'SEWING'])->nullable()->default('FABRIC');
             $table->unsignedBigInteger('creatorId')->nullable();
             $table->unsignedBigInteger('updaterId')->nullable();
