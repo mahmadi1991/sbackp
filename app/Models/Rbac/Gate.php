@@ -21,6 +21,5 @@ class Gate extends Model
     {
         return $this->belongsTo('App\\Models\\Rbac\\Category' , 'category');
     }
-
 }
 
