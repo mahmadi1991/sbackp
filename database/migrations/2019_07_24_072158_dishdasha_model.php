@@ -17,8 +17,11 @@ class DishdashaModel extends Migration
 			$table->bigIncrements('id')->nullable();
 			$table->string('hash', 10)->nullable()->unique();
 			$table->string('title', 100)->nullable();
-			$table->integer('order')->nullable();
-			$table->unsignedBigInteger('creatorId')->nullable();
+            $table->integer('cost')->nullable();
+            $table->string('picture', 225)->nullable();
+            $table->integer('order')->nullable();
+            $table->enum('status', ['ACTIVE', 'INACTIVE'])->nullable()->default('INACTIVE');
+            $table->unsignedBigInteger('creatorId')->nullable();
 			$table->unsignedBigInteger('updaterId')->nullable();
 			$table->timestamp('created_at')->nullable();
 			$table->timestamp('updated_at')->nullable();

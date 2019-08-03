@@ -20,10 +20,9 @@ class Fabric extends Migration
 			$table->unsignedBigInteger('parentOrder')->nullable();
 			$table->string('title', 100)->nullable();
 			$table->integer('cost')->nullable();
+			$table->integer('length')->nullable();
 			$table->string('picture', 225)->nullable();
 			$table->string('pixel', 4000)->collation('ascii_general_ci')->nullable();
-			$table->integer('discountPercent')->nullable()->default(0);
-			$table->enum('discountStatus', ['Y', 'N'])->default('N')->nullable();
 			$table->enum('stockStatus', ['Y', 'N'])->default('Y')->nullable();
 			$table->unsignedBigInteger('creatorId')->nullable();
 			$table->unsignedBigInteger('updaterId')->nullable();

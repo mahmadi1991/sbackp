@@ -19,7 +19,10 @@ class DetailsModel extends Migration
 			$table->unsignedBigInteger('parentId')->nullable();
 			$table->string('title', 10)->nullable();
 			$table->integer('cost')->nullable();
-			$table->unsignedBigInteger('creatorId')->nullable();
+            $table->string('picture', 225)->nullable();
+            $table->enum('parentStatus', ['ACTIVE', 'INACTIVE'])->nullable()->default('ACTIVE');
+            $table->enum('status', ['ACTIVE', 'INACTIVE'])->nullable()->default('ACTIVE');
+            $table->unsignedBigInteger('creatorId')->nullable();
 			$table->unsignedBigInteger('updaterId')->nullable();
 			$table->timestamp('created_at')->nullable();
 			$table->timestamp('updated_at')->nullable();

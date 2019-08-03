@@ -14,8 +14,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             FabricTableSeeder::class,
+            FactorTableSeeder::class,
             AddressTableSeeder::class,
             SizeTableSeeder::class,
+            SizeCategoryTableSeeder::class,
             DishdashaModelTableSeeder::class,
             DetailsModelTableSeeder::class,
             UserTableSeeder::class,
@@ -24,8 +26,8 @@ class DatabaseSeeder extends Seeder
             AreaTableSeeder::class,
             CityTableSeeder::class,
             OrderTableSeeder::class,
+            LanguageTableSeeder::class,
             OrderDetailsTableSeeder::class,
-            DiscountCodeTableSeeder::class,
         ]);
 
     }

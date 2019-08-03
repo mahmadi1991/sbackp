@@ -22,6 +22,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 0,
             'title'      => 'یقه',
             'cost'       => 90000,
+            'picture'       => 'model1.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -32,6 +35,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 0,
             'title'      => 'دکمه',
             'cost'       => 45000,
+            'picture'       => 'model2.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -43,6 +49,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 0,
             'title'      => 'جیب',
             'cost'       => 90000,
+            'picture'       => 'model3.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -53,6 +62,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 1,
             'title'      => 'دیپلمات',
             'cost'       => 90000,
+            'picture'       => 'model4.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -63,6 +75,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 1,
             'title'      => 'انگلیسی',
             'cost'       => 90000,
+            'picture'       => 'model5.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -73,6 +88,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 2,
             'title'      => 'چهار گوش',
             'cost'       => 69000,
+            'picture'       => 'model6.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -83,7 +101,10 @@ class DetailsModelTableSeeder extends Seeder
             'hash'       => Str::random(6),
             'parentId'   => 3,
             'title'      => 'مربعی',
+            'picture'       => 'model7.jpg',
             'cost'       => 45000,
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -94,6 +115,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 3,
             'title'      => 'دایره ای',
             'cost'       => 40000,
+            'picture'       => 'model8.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),
@@ -104,6 +128,9 @@ class DetailsModelTableSeeder extends Seeder
             'parentId'   => 3,
             'title'      => 'ستاره ای',
             'cost'       => 39000,
+            'picture'       => 'model9.jpg',
+            'parentStatus'           => 'INACTIVE',
+            'status'           => 'INACTIVE',
             'creatorId'  => $faker->numberBetween(1, 2),
             'created_at' => \Carbon\Carbon::now()->addDays($faker->numberBetween(1, 7))
                 ->addMonths($faker->numberBetween(1, 5))->addHour($faker->numberBetween(1, 10)),

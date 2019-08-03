@@ -59,6 +59,7 @@ class CityTableSeeder extends Seeder
                 'id'       => $city->id,
                 'parentId' => $city->parentId,
                 'name'     => $city->name,
+                'status'     => 'ACTIVE',
             ]);
         }*/
 
